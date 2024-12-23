@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/* || Reset */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+input, button, textarea {
+    font: inherit;
+}
+
+/* || Variables */
+
+:root {
+
+    /* Fonts */
+    --FF: "Nunito", sans-serif;
+    --FF-HEADING: "Fugaz One", cursive;
+    --FS: clamp(1rem, 2vw, 1.1rem);
+
+    /* Colors */
+
+        /* BG Color */
+        --BGCOLOR: grey;
+        --BG-IMAGE: linear-gradient(white, grey);
+        --BODY-BGCOLOR: lightgrey;
+        --HEADER-BGCOLOR: rgb(150, 0, 50);
+        --CONTENT-BGCOLOR: lightcoral;
+
+        /* Font Color */
+        --FONT-COLOR-DARK: #000;
+        --FONT-COLOR-LIGHT: #fff;
+
+    /* Borders */
+    --BORDER-COLOR: black;
+    --BORDERS: 2px solid var(--BORDER-COLOR);
+
+    /* Standard Padding */
+    --PADDING-TB: 0.25em;
+    --PADDING-SIDE: 2.5%;
+
+    /* Standard Margin */
+    --MARGIN: clamp(1em, 2.5vh, 1.5em);
+}
+
+/* || General */
+
+html {
+    background-color: var(--BGCOLOR);
+    background-image: var(--BG-IMAGE);
+    scroll-behavior: smooth;
+    font-size: var(--FS);
+    font-family: var(--FF);
+}
+
+body {
+    max-width: 800px;
+    margin: 0 auto;
+    min-height: 100vh;
+    background-color: var(--BODY-BGCOLOR);
+}
+
+h1, h2, h3 {
+    font-family: var(--FF-HEADING);
+    letter-spacing: 0.1em;
+}
+
+h2, h3 {
+    margin-bottom: 2rem;
+}
+
+p {
+    line-height: 1.5;
+    padding: var(--PADDING-TB) 0;
+}
+
+/* || Header */
+
+.Header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: var(--HEADER-BGCOLOR);
+}
+
+.Header__h1 {
+    padding: var(--PADDING-TB) var(--PADDING-SIDE);
+    text-align: center;
+}
+
+/* IMAGE */
+
+.Img {
+    background-image: url(IMG_2286.JPEG);
+    background-position: 50% 30%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+}
+
+.Ul {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 1rem;
+    list-style: none;
+    display: flex;
+    justify-content:space-between;
+}
+
+/* || Section */
+
+.Content {
+    background-color: var(--CONTENT-BGCOLOR);
+    padding: var(--PADDING-TB) var(--PADDING-SIDE);
+    margin: var(--MARGIN);
+}
+
+.Article {
+    background-color: var(--NAV-BGCOLOR);
+    padding: var(--PADDING-TB) var(--PADDING-SIDE);
+    margin: var(--MARGIN);
+}
+
+/* || Footer */
+
+.Footer {
+    background-color: var(--HEADER-BGCOLOR);
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 800px;
+}
