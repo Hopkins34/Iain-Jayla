@@ -1,5 +1,5 @@
 // Predefined date to track from
-const trackedDate = new Date('2024-12-07T21:50:00'); // Change this to your desired date
+const trackedDate = new Date('2024-12-10T21:50:00'); // Change this to your desired date
 
 function updateTime() {
   const now = new Date();
